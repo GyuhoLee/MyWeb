@@ -50,7 +50,7 @@
     if($("#portfolio").offset().top - window.scrollY < height){
       $("#portfolio").attr('style', 'visibility:visible');
       $("#porthead").addClass("bounceInUp");
-      $(".portfolio-item").addClass("fadeInUpBig");
+      $(".portfolio-item").addClass("zoomInUp");
     }
     if($("#about").offset().top - window.scrollY < height){
       $("#about").attr('style', 'visibility:visible');
