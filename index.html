@@ -103,13 +103,13 @@
   <section class="bg-light page-section" id="portfolio">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center animated" id="porthead">
           <h2 class="section-heading text-uppercase">Portfolio</h2>
           <h3 class="section-subheading text-muted">My projets since 2019~</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-4 col-sm-6 portfolio-item animated">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -124,7 +124,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-4 col-sm-6 portfolio-item animated">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -205,7 +205,7 @@
   <section class="page-section" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center animated" id="abouthead">
           <h2 class="section-heading text-uppercase">About</h2>
           <h3 class="section-subheading text-muted">Biography of my developer life</h3>
         </div>
@@ -213,7 +213,7 @@
       <div class="row">
         <div class="col-lg-12">
           <ul class="timeline">
-            <li>
+            <li class="animated about-detail" id="about1">
               <div class="timeline-image">
                 <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
               </div>
@@ -230,7 +230,7 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted">
+            <li class="timeline-inverted animated about-detail" id="about2">
                <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/about/2.png" alt="">
                 </div>
@@ -242,13 +242,12 @@
                   <div class="timeline-body">
                     <p class="text-muted">I became the director of education in 2019 within the KHU computer engineering club "HACKER".
                         In the first semester, taught the basics of programming using Python language.
-                        And during summer vacation, maneged projects designed and implemented by freshmen.
-                        Finally, in the second semester, taught object-oriented programming with C++ language.
+                        In the second semester, taught object-oriented programming with C++ language.
                     </p>
                   </div>
               </div>
             </li>
-            <li>
+            <li class="animated about-detail" id="about3">
               <div class="timeline-image">
                 <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
               </div>
@@ -283,7 +282,7 @@
               </div>
             </li>
             -->
-            <li class="timeline-inverted">
+            <li class="timeline-inverted animated about-detail" id="about-last">
               <div class="timeline-image">
                 <h4>We are
                   <br>Be part of
@@ -295,100 +294,9 @@
       </div>
     </div>
   </section>
-
-  <!-- Team
-  <section class="bg-light page-section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
-    </div>
-  </section>
--->
+  
   <!-- Contact -->
-  <section class="page-section" id="contact">
+  <section class="page-section animated" id="contact">
       <div class="container" id="contactbefore">
           <div class ="row">
             <div class="col-lg-12 text-center">
@@ -449,22 +357,22 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-sm-6">
-            <ul class=skills>
-                <li class="skills">C</li>
-                <li class="skills">C++</li>
-                <li class="skills">Python</li>
-                <li class="skills">C#</li>
-                <li class="skills">html</li>
-                <li class="skills">Bootstrap</li>
-                <li class="skills">CSS</li>
-                <li class="skills">React</li>
-                <li class="skills">Javascript</li>
-                <li class="skills">Algorithm</li>
-                <li class="skills">Node.js</li>
-                <li class="skills">Unity</li>
-                <li class="skills">Vuforia</li>
-                <li class="skills">Android</li>
-                <li class="skills">jQuery</li>
+            <ul class="skills">
+                <li class="skills ver1 animated">C</li>
+                <li class="skills ver2 animated">C++</li>
+                <li class="skills ver1 animated">Python</li>
+                <li class="skills ver2 animated">C#</li>
+                <li class="skills ver1 animated">html</li>
+                <li class="skills ver2 animated">Bootstrap</li>
+                <li class="skills ver1 animated">CSS</li>
+                <li class="skills ver2 animated">React</li>
+                <li class="skills ver1 animated">Javascript</li>
+                <li class="skills ver2 animated">Algorithm</li>
+                <li class="skills ver1 animated">Node.js</li>
+                <li class="skills ver2 animated">Unity</li>
+                <li class="skills ver1 animated">Vuforia</li>
+                <li class="skills ver2 animated">Android</li>
+                <li class="skills ver1 animated">jQuery</li>
             </ul>
           </div>
         </div>
