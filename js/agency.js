@@ -35,44 +35,49 @@
   var height = window.innerHeight * 0.6;
 
   // Collapse Navbar
+  var space = 0;
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
-    if($("#information").offset().top - window.scrollY < height){
+    if($("#information").offset().top - window.scrollY < height && space == 0){
       $("#information").attr('style', 'visibility:visible');
       $("#infohead").addClass("zoomInDown");
       $("#infoleft").addClass("fadeInLeftBig");
       $("#inforight").addClass("fadeInRightBig");
+      space = 1;
     }
-    if($("#portfolio").offset().top - window.scrollY < height){
+    if($("#portfolio").offset().top - window.scrollY < height && space == 1){
       $("#portfolio").attr('style', 'visibility:visible');
       $("#porthead").addClass("bounceInUp");
       $(".portfolio-item").addClass("zoomInUp");
+      space = 2;
     }
-    if($("#about").offset().top - window.scrollY < height){
+    if($("#about").offset().top - window.scrollY < height && space == 2){
       $("#about").attr('style', 'visibility:visible');
       $("#abouthead").addClass("zoomIn");
       $("#about1").attr('style', 'visibility:visible');
       $("#about1").addClass("flipInX");
     }
-    if($("#about2").offset().top - window.scrollY < height + 30){
+    if($("#about2").offset().top - window.scrollY < height + 30 && space == 2){
       $("#about2").attr('style', 'visibility:visible');
       $("#about2").addClass("flipInX");
     }
-    if($("#about3").offset().top - window.scrollY < height + 30){
+    if($("#about3").offset().top - window.scrollY < height + 30 && space == 2){
       $("#about3").attr('style', 'visibility:visible');
       $("#about3").addClass("flipInX");
     }
-    if($("#about-last").offset().top - window.scrollY < height + 30){
+    if($("#about-last").offset().top - window.scrollY < height + 30 && space == 2){
       $("#about-last").attr('style', 'visibility:visible');
       $("#about-last").addClass("flipInX");
+      space = 3;
     }
-    if($("#contact").offset().top - window.scrollY < height){
+    if($("#contact").offset().top - window.scrollY < height && space == 3){
       $("#contact").attr('style', 'visibility:visible');
       $("#contact").addClass("rollIn");
+      space = 4;
     }
   };
   // Collapse now if page is not at top
