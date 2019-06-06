@@ -39,7 +39,7 @@ h6 {
   text-align: center;
   margin-top : 40px;
   margin-bottom: 40px;
-  color: snow;
+  color: coral;
 }
 
 .page-section {
@@ -598,16 +598,20 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0;
 }
 
-section#contactbefore{
-  background-color: bisque;
+#contactafter{
+  display: none;
 }
 
-section#contact {
-  display:none;
+#contact {
   background-color: #212529;
   background-image: url("../img/mail.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#showcontact{
+  margin-top: 10%;
+  margin-bottom: 17%;
 }
 
 section#contact .section-heading {
