@@ -20,6 +20,12 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  //Contact display block
+  $("#showcontact").click(function(){
+    $("#contactbefore").hide(1000,'swing').fadeOut(800, 'swing',
+    $("#contact").show(1000,'swing'),faidIn(800, 'swing') );
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
