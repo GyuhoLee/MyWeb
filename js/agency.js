@@ -76,7 +76,7 @@
     }
     if($("#contact").offset().top - window.scrollY < height && space == 3){
       $("#contact").attr('style', 'visibility:visible');
-      $("#contact").addClass("rollIn");
+      $("#contact").addClass("fadeIn");
       space = 4;
     }
   };
