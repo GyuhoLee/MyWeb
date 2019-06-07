@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
-html, body {
+body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -119,6 +119,7 @@ img::-moz-selection {
 
 #mainNav {
   background-color: #212529;
+  overflow-x: hidden;
 }
 
 #mainNav .navbar-toggler {
