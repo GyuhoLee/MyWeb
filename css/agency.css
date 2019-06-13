@@ -235,12 +235,6 @@ header.masthead .intro-text .intro-heading {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@include media-breakpoint-down(sm) {
-  .u-hidden\@sm-down {
-    display: none !important;
-  }
-}
-
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
@@ -730,7 +724,7 @@ li.skills {
   font-size: 1.2em;
 }
 
-#information, #portfolio, #about, #contact{
+#infohead, #infoleft, #inforight, #porthead, .portfolio-item, #abouthead, #contact{
   visibility: hidden;
 }
 

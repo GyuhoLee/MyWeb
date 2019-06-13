@@ -43,20 +43,23 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
     if($("#information").offset().top - window.scrollY < height && space == 0){
-      $("#information").attr('style', 'visibility:visible');
+      $("#infohead").attr('style', 'visibility:visible');
       $("#infohead").addClass("zoomInDown");
+      $("#infoleft").attr('style', 'visibility:visible');
       $("#infoleft").addClass("fadeInLeftBig");
+      $("#inforight").attr('style', 'visibility:visible');
       $("#inforight").addClass("fadeInRightBig");
       space = 1;
     }
     if($("#portfolio").offset().top - window.scrollY < height && space == 1){
-      $("#portfolio").attr('style', 'visibility:visible');
+      $("#porthead").attr('style', 'visibility:visible');
       $("#porthead").addClass("bounceInUp");
+      $(".portfolio-item").attr('style', 'visibility:visible');
       $(".portfolio-item").addClass("zoomInUp");
       space = 2;
     }
     if($("#about").offset().top - window.scrollY < height && space == 2){
-      $("#about").attr('style', 'visibility:visible');
+      $("#abouthead").attr('style', 'visibility:visible');
       $("#abouthead").addClass("zoomIn");
       $("#about1").attr('style', 'visibility:visible');
       $("#about1").addClass("flipInX");
